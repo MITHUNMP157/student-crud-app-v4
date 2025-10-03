@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #006400;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nav-item ul {
+  list-style-type: none;
+}
+
+.nav-item li {
+  display: inline-block;
+}
+
+.student-link {
+  text-decoration: none;
+  color: rgb(0, 0, 200);
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.257);
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.student-link:hover {
+  background: red;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+@media (max-width: 660px) {
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: flex-end;
+  }
+
+  .nav-item li {
+    padding: 10px;
+    text-align: left;
+  }
+}
