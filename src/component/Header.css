@@ -46,7 +46,7 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 660px) {
+/*@media (max-width: 660px) {
   .nav-bar {
     display: flex;
     flex-wrap: wrap;
@@ -58,4 +58,4 @@ body {
     padding: 10px;
     text-align: left;
   }
-}
+}*/
