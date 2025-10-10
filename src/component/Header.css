@@ -8,12 +8,12 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   align-items: center;
   padding: 0 15px;
   position: sticky;
   top: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 .logo h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -47,15 +47,30 @@ body {
 }
 
 @media (max-width: 660px) {
+  /* 1. NavBar அமைப்பை மொபைலுக்கு மாற்றுதல் */
   .nav-bar {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-items: flex-end;
+    flex-direction: column; /* எல்லாவற்றையும் செங்குத்தாக (ஒன்றன் கீழ் ஒன்றாக) வரிசைப்படுத்த */
+    align-items: center; /* ஐட்டம்களை மையப்படுத்த (Horizontally) */
+    width: 100%;
+    padding: 5px 0;
   }
 
+  /* 2. ஒவ்வொரு லிஸ்ட் ஐட்டத்தையும் (li) முழு அகலத்துக்கு மாற்றுதல் */
   .nav-item li {
-    padding: 10px;
-    text-align: left;
+    width: 100%; /* ஒவ்வொரு ஐட்டமும் முழு அகலத்தை எடுத்துக்கொள்ள */
+    text-align: center; /* எழுத்தை மையப்படுத்த */
+    padding: 5px 0;
+  }
+  
+  /* 3. லிங்க் (a tag) ஸ்டைல்களைச் சரிசெய்தல் (விரும்பினால்) */
+  .nav-item li a {
+    display: block; /* கிளிக் செய்யும் பகுதி முழு அகலத்தையும் எடுத்துக்கொள்ள */
+    padding: 8px 15px; 
+    text-decoration: none;
+    /* நீங்கள் விரும்பும் வண்ணங்களை இங்கு சேர்க்கலாம் */
+    /* color: white; */ 
+    /* background-color: #555; */
   }
 }
+
