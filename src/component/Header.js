@@ -34,15 +34,15 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/studentDB" className="student-link">
-                    Student Details
+                    Student Detail
                   </Link>
                 </li>
-<li>
+                <li>
                   <Link to="/" className="student-link">
                     Management-DB
                   </Link>
                 </li>
-<li>
+                <li>
                   <Link to="/" className="student-link">
                     Logout
                   </Link>
