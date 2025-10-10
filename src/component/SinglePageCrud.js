@@ -57,6 +57,13 @@ const SinglePageCrud = () => {
     }
   };
 
+  const updtaeUser = async (userId) =>{
+  const response = await axios.get(`https://jsonplaceholder.typicode.com/users${userId}`, {name: username, email: email, phone: phone});
+  const responseData = await response.data;
+    const updatedUser = responseData.map((user) => user.id === userId ? res.data : user);
+    setUserData(updatedUser)
+  
+  }
   return (
     <div>
       {form ? (
