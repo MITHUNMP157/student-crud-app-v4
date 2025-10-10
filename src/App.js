@@ -5,6 +5,7 @@ import Register from "./component/Register";
 import Home from "./component/Home";
 import StudentDetails from "./component/StudentDetails";
 
+
 function App() {
   return (
     <div className="App">
