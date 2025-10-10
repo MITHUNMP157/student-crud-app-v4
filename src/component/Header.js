@@ -34,7 +34,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/studentDB" className="student-link">
-                    Student Detail
+                    Student Details
                   </Link>
                 </li>
                 <li>
