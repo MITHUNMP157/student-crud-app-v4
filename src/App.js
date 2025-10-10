@@ -14,10 +14,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/studentdb" element={<StudentDetails />} />
+        <Route path="/studentdb" element={<StudentDetails />} />
+        <Route path="/studentdb" element={<StudentDetails />} />
       </Routes>
-<Route path="/studentdb" element={<StudentDetails />} />
+
       </Routes>
-<Route path="/studentdb" element={<StudentDetails />} />
+
       </Routes>
     </div>
   );
