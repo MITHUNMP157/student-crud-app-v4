@@ -37,6 +37,16 @@ const Header = () => {
                     Student Details
                   </Link>
                 </li>
+<li>
+                  <Link to="/" className="student-link">
+                    Management-DB
+                  </Link>
+                </li>
+<li>
+                  <Link to="/" className="student-link">
+                    Logout
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
