@@ -1,0 +1,10 @@
+.home-hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-hero h2 {
+  color: darkcyan;
+}
